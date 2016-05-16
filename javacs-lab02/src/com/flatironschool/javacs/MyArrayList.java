@@ -1,6 +1,4 @@
-/**
- *
- */
+package com.flatironschool.javacs;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -197,7 +195,7 @@ public class MyArrayList<E> implements List<E> {
 
 	@Override
 	public E remove(int index) {
-		E toReturn = xget(inde);
+		E toReturn = get(index);
 		for (int i = index; i < size - 1; i++)
 			array[i] = array[i + 1];
 		size--;
